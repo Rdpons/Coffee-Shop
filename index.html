@@ -6,7 +6,7 @@
     <title>TFG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body class="bg-[#2C1412] text-white">
@@ -45,39 +45,61 @@
     
     <section id="about" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-yellow-400">About Us</h2>
+            <h2 class="text-3xl font-bold text-[#a96631]">About Us</h2>
             <p class="mt-4 text-black max-w-3xl mx-auto">At TFG, we are passionate about crafting the perfect cup of coffee...</p>
             <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-8">
                 <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/ParkCentraleJoseMariadelMarSt.cor_.AbadStreetCebuCentralVisayas6000.jpg" 
                      alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
                 <div class="max-w-md text-black" data-aos="fade-left">
-                    <h3 class="text-xl font-semibold text-yellow-400">Our Story</h3>
+                    <h3 class="text-xl font-semibold text-[#a96631]">Our Story</h3>
                     <p class="mt-2">Founded in 2024, Ardii Coffee started as a small café with a big dream...</p>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="product" class="py-16 bg-white text-center">
-        <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-[#2C1412]">Our Products</h2>
-            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg">
-                    <img src="https://i.pinimg.com/736x/eb/98/8a/eb988a1eee262fdaea31e98b82ab3d47.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
+            <div class="mt-16 flex justify-center gap-8">
+                <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-[#a96631]">
+                    <img src="https://i.pinimg.com/736x/e5/c0/32/e5c032826139b72c2af2671ea788d811.jpg" alt="CEO 1" class="w-full h-full object-cover">
                 </div>
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg">
-                    <img src="https://i.pinimg.com/736x/fe/eb/7d/feeb7da08ad6833143122b12bb31dd99.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
+                <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-[#a96631]">
+                    <img src="https://i.pinimg.com/736x/e5/c0/32/e5c032826139b72c2af2671ea788d811.jpg" alt="CEO 2" class="w-full h-full object-cover">
                 </div>
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-[#a96631]">
+                    <img src="https://i.pinimg.com/736x/e5/c0/32/e5c032826139b72c2af2671ea788d811.jpg" alt="CEO 3" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
     
+    
+    <section id="product" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-[#a96631] mb-8">Our Products</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500">
+                    <img src="https://i.pinimg.com/736x/eb/98/8a/eb988a1eee262fdaea31e98b82ab3d47.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] bg-opacity-80 opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
+                    </div>
+                </div>
+    
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500">
+                    <img src="https://i.pinimg.com/736x/fe/eb/7d/feeb7da08ad6833143122b12bb31dd99.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] bg-opacity-80 opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Strong, bold espresso shot for that instant energy boost.</p>
+                    </div>
+                </div>
+    
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] bg-opacity-80 opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer id="contact" class="bg-[#2C1412] text-center py-6">
         <p>&copy; 2024 Himalayan Dumplings. All rights reserved.</p>
         <div class="flex justify-center space-x-4 mt-4">
@@ -85,10 +107,10 @@
             <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-instagram text-2xl'></i></a>
         </div>
     </footer>
-    <button id="go-top" class="fixed bottom-10 right-10 p-4 bg-yellow-400 text-white rounded-2xl shadow-lg hidden hover:bg-yellow-500 transition-all duration-300">
+    <button id="go-top" class="fixed bottom-10 right-10 p-4 bg-[#a96631] text-white rounded-2xl shadow-lg hidden hover:bg-yellow-500 transition-all duration-300">
         <i class="bx bx-arrow-to-top text-2xl"></i>
     </button>
-    <script src="/js/main.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000 });
