@@ -6,23 +6,23 @@
     <title>TFG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body class="bg-[#2C1412] text-white">
-    <header class="w-full backdrop-blur-md z-50">
+    <header class="w-full bg-[#2C1412] bg-opacity-90 z-50 fixed top-0 left-0 right-0 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-white">TFG</h1>
+            <h1 class="text-2xl sm:text-3xl font-bold text-white">Himalayan Dumplings</h1>
             <div class="lg:hidden flex items-center">
                 <button id="burger-icon" class="text-white">
                     <i class="bx bx-menu text-2xl"></i>
                 </button>
             </div>
-            <nav id="menu" class="space-x-10 text-white font-medium hidden lg:flex">
-                <a href="#home" class="hover:text-yellow-400">Home</a>
-                <a href="#about" class="hover:text-yellow-400">About</a>
-                <a href="#product" class="hover:text-yellow-400">Product</a>
-                <a href="#contact" class="hover:text-yellow-400">Contact</a>
+            <nav id="menu" class="hidden lg:flex space-x-10 text-white font-medium">
+                <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+                <a href="#about" class="hover:text-yellow-400 transition">About</a>
+                <a href="#product" class="hover:text-yellow-400 transition">Product</a>
+                <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
             </nav>
         </div>
     </header>
@@ -33,68 +33,62 @@
         <a href="#contact" class="hover:text-yellow-400">Contact</a>
         <button id="close-menu"></button>
     </div>
-    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center" 
+    
+    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center px-6 text-center" 
         style="background-image: url('https://i.pinimg.com/736x/a3/69/df/a369dfe059e9f517b75305b1e99378e3.jpg');">
         <div class="absolute inset-0 bg-[#2C1412] bg-opacity-50"></div>
-        <div class="relative text-center z-10 px-6" data-aos="fade-up">
-            <h2 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">The Best Coffee in Town</h2>
-            <p class="text-lg md:text-xl mt-4 text-gray-200">Freshly brewed, perfectly served.</p>
+        <div class="relative z-10" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-5xl font-bold">The Best Coffee in Town</h2>
+            <p class="text-lg sm:text-xl mt-4 text-gray-200">Freshly brewed, perfectly served.</p>
         </div>
     </section>
-
-    <!-- ari ang about-->
-    <section id="about" class="py-16 bg-[#fff]">
-        <div class="container mx-auto text-center" data-aos="fade-up">
+    
+    <section id="about" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-yellow-400">About Us</h2>
-            <p class="mt-4 text-black max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                At TFG, we are passionate about crafting the perfect cup of coffee. From selecting the best beans to serving you with a warm smile, our goal is to make every sip a delightful experience.
-            </p>
+            <p class="mt-4 text-black max-w-3xl mx-auto">At TFG, we are passionate about crafting the perfect cup of coffee...</p>
             <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-8">
                 <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/ParkCentraleJoseMariadelMarSt.cor_.AbadStreetCebuCentralVisayas6000.jpg" 
-                     alt="About Us Image" class="w-80 rounded-lg shadow-lg" data-aos="fade-right">
-                <div class="max-w-md text-black" data-aos="fade-left" data-aos-delay="400">
+                     alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
+                <div class="max-w-md text-black" data-aos="fade-left">
                     <h3 class="text-xl font-semibold text-yellow-400">Our Story</h3>
-                    <p class="mt-2">Founded in 2024, Ardii Coffee started as a small café with a big dream—to bring people together through the love of coffee. Today, we continue to serve our customers with dedication and excellence.</p>
+                    <p class="mt-2">Founded in 2024, Ardii Coffee started as a small café with a big dream...</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ari ang product -->
-    <section id="product" class="py-16 bg-[#fff]">
-        <div class="container mx-auto text-center" data-aos="fade-up">
+    
+    <section id="product" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-[#2C1412]">Our Products</h2>
-            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg">
-                    <img src="https://i.pinimg.com/736x/eb/98/8a/eb988a1eee262fdaea31e98b82ab3d47.jpg" alt="Coffee Product" class="rounded-lg">
+                    <img src="https://i.pinimg.com/736x/eb/98/8a/eb988a1eee262fdaea31e98b82ab3d47.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
-                    <p class="mt-2 text-gray-600">A rich and aromatic blend of coffee beans, perfect for any occasion.</p>
                 </div>
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg">
-                    <img src="https://i.pinimg.com/736x/fe/eb/7d/feeb7da08ad6833143122b12bb31dd99.jpg" alt="Coffee Product" class="rounded-lg">
+                    <img src="https://i.pinimg.com/736x/fe/eb/7d/feeb7da08ad6833143122b12bb31dd99.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
-                    <p class="mt-2 text-gray-600">A powerful and intense shot of espresso, perfect for your morning boost.</p>
                 </div>
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <p class="mt-2 text-gray-600">A refreshing iced coffee drink to keep you cool during the hot days.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ari ang tiil -->
-    <footer class="bg-[#2C1412] text-center py-4">
-        <p>&copy; 2024 Ardii Coffee. All rights reserved.</p>
+    
+    <footer id="contact" class="bg-[#2C1412] text-center py-6">
+        <p>&copy; 2024 Himalayan Dumplings. All rights reserved.</p>
         <div class="flex justify-center space-x-4 mt-4">
             <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-facebook text-2xl'></i></a>
             <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-instagram text-2xl'></i></a>
-            <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-twitter text-2xl'></i></a>
         </div>
     </footer>
     <button id="go-top" class="fixed bottom-10 right-10 p-4 bg-yellow-400 text-white rounded-2xl shadow-lg hidden hover:bg-yellow-500 transition-all duration-300">
         <i class="bx bx-arrow-to-top text-2xl"></i>
     </button>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000 });
