@@ -6,7 +6,7 @@
     <title>TFG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
         rel="stylesheet">
@@ -38,11 +38,11 @@
     
     <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center px-6 text-center" 
         style="background-image: url('https://i.pinimg.com/736x/a3/69/df/a369dfe059e9f517b75305b1e99378e3.jpg');">
-        <div class="absolute inset-0 bg-[#2C1412] bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-[#2C1412] bg-opacity-20"></div>
         <div class="relative z-10" data-aos="fade-up">
             <h2 class="text-3xl sm:text-5xl font-bold">The Best Coffee in Town</h2>
             <p class="text-lg sm:text-xl mt-4 text-gray-200 mb-10">Freshly brewed, perfectly served.</p>
-            <a href="#footer" class="bg-[#a96631] p-2 rounded-lg text-xl">Contact Us</a>
+            <a href="#footer" class="bg-[#a96631] p-2 rounded-lg text-xl hover:brightness-90 font-semibold">Contact Us</a>
         </div>
     </section>
     
@@ -52,6 +52,14 @@
             <p class="mt-4 text-black max-w-3xl mx-auto">At TFG, we are passionate about crafting the perfect cup of coffee...</p>
             <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-8">
                 <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/ParkCentraleJoseMariadelMarSt.cor_.AbadStreetCebuCentralVisayas6000.jpg" 
+                     alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
+                <div class="max-w-md text-black" data-aos="fade-left">
+                    <h3 class="text-xl font-semibold text-[#a96631]">Our Story</h3>
+                    <p class="mt-2">Founded in 2024, Ardii Coffee started as a small café with a big dream...</p>
+                </div>
+            </div>
+            <div class="mt-8 flex flex-col md:flex-row-reverse justify-center items-center gap-8">
+                <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/cafeteria.png" 
                      alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
                 <div class="max-w-md text-black" data-aos="fade-left">
                     <h3 class="text-xl font-semibold text-[#a96631]">Our Story</h3>
@@ -74,17 +82,17 @@
     </section>
     <section id="product" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-[#a96631] mb-8">Our Products</h2>
+            <h2 class="text-3xl font-bold text-[#a96631] mb-8">-----  Our Products  -----</h2>
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500">
-                    <img src="https://i.pinimg.com/736x/eb/98/8a/eb988a1eee262fdaea31e98b82ab3d47.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://www.thebostoncalendar.com/system/events/photos/000/371/537/large/_msv9886_Momo_3.jpg?1645819118" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
                         <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
                     </div>
                 </div>
     
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500">
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
                     <img src="https://i.pinimg.com/736x/fe/eb/7d/feeb7da08ad6833143122b12bb31dd99.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
@@ -92,7 +100,45 @@
                     </div>
                 </div>
     
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500">
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div>
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div>
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                    </div>
+                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
                     <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
@@ -107,9 +153,9 @@
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="block fill-white"></path>
             </svg>
-         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-20 p-20">
+         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ml-20 p-10">
              <div class="flex flex-col ">
-                 <h2 class="text-3xl text-white uppercase">Footer</h2>
+                 <h2 class="text-2xl text-white uppercase">Footer</h2>
                  <ul>
                      <li class="my-4 list-none">TFG Website</li>
                      <li class="my-4 list-none">Terms</li>
@@ -117,7 +163,7 @@
                  </ul>
              </div>
              <div class="flex flex-col">
-                <h2 class="text-3xl text-white uppercase">Footer</h2>
+                <h2 class="text-2xl text-white uppercase">Footer</h2>
                 <ul>
                      <li class="my-4 list-none">TFG Website</li>
                      <li class="my-4 list-none">Terms</li>
@@ -125,7 +171,7 @@
                  </ul>
              </div>
              <div class="flex flex-col ">
-                <h2 class="text-3xl text-white uppercase">Footer</h2>
+                <h2 class="text-2xl text-white uppercase">Footer</h2>
                 <ul>
                      <li class="my-4 list-none">TFG Website</li>
                      <li class="my-4 list-none">Terms</li>
@@ -133,12 +179,12 @@
                  </ul>
              </div>
              <div class="flex flex-col ">
-                <h2 class="text-3xl text-white uppercase">Footer</h2>
+                <h2 class="text-2xl text-white uppercase">Footer</h2>
                 <ul>
                      <li class="my-4 list-none">Email: tfgs@gmail.com</li>
                      <li class="my-4 list-none">Phone: +1 113-456-7890</li>
                  </ul>
-                 <div class="flex" style="gap:20px">
+                 <div class="flex">
                      <a href="#">
                      </a>
                      <a href="#">
@@ -158,7 +204,7 @@
     <button id="go-top" class="fixed bottom-10 right-10 p-4 bg-[#a96631] text-white rounded-2xl shadow-lg hidden hover:bg-[#a96631] transition-all duration-300">
         <i class="bx bx-arrow-to-top text-2xl"></i>
     </button>
-    <script src="/js/main.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000 });
