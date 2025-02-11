@@ -6,15 +6,16 @@
     <title>TFG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
         rel="stylesheet">
+    <link rel="icon" href="logo2.png" type="image/icon type" class="w-30">
 </head>
-<body class="bg-[#2C1412] text-white ">
+<body class="bg-[#fff] text-white">
     <header class="w-full bg-[#2C1412] bg-opacity-90 z-50 fixed top-0 left-0 right-0 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/TFG-SPACES-logo.png" class="h-10">
+            <img src="logo3.png" class="h-10 w-auto">
             <div class="lg:hidden flex items-center">
                 <button id="burger-icon" class="text-white">
                     <i class="bx bx-menu text-2xl"></i>
@@ -35,7 +36,7 @@
         <a href="#contact" class="hover:text-yellow-400">Contact</a>
         <button id="close-menu"></button>
     </div>
-    
+    <!-- ari ang home -->
     <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center px-6 text-center" 
         style="background-image: url('https://i.pinimg.com/736x/a3/69/df/a369dfe059e9f517b75305b1e99378e3.jpg');">
         <div class="absolute inset-0 bg-[#2C1412] bg-opacity-20"></div>
@@ -45,7 +46,7 @@
             <a href="#footer" class="bg-[#a96631] p-2 rounded-lg text-xl hover:brightness-90 font-semibold">Contact Us</a>
         </div>
     </section>
-    
+    <!-- ari ang about -->
     <section id="about" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-[#a96631]">About Us</h2>
@@ -78,14 +79,37 @@
                 </div>
             </div>
         </div>
-        <iframe class="flex ml-auto mr-auto w-[90%]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.1603779100733!2d123.90424550964799!3d10.329047289751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99922157b8c91%3A0x529b9bacb2aff9!2sPark%20Centrale%2C%20Jose%20Maria%20del%20Mar%20St%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1738979637757!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+    <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-right">
+        <div>
+            <h2 class="text-4xl font-bold mb-6 text-black">Our Locations</h2>      
+            <div class="mb-4">
+                <h3 class="text-2xl font-semibold">Cebu</h3>
+                <p class="text-gray-700">
+                    108 Gov. M. Cuenco Ave, Cebu City, 6000 Cebu
+                </p>
+            </div>
+        </div>
+        <div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.2255594255473!2d123.91283222850426!3d10.349701718642864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a998eb8b21c239%3A0x33fc570cc37a1a71!2s108%20Gov.%20M.%20Cuenco%20Ave%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1739253394895!5m2!1sen!2sph" 
+                class="w-full h-[300px] md:h-[450px] border-0 rounded-2xl" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>       
+        </div>
+    </section>
+    
+
+    <!-- ari ang product -->
     <section id="product" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-[#a96631] mb-8">-----  Our Products  -----</h2>
+            <h2 class="text-3xl font-bold text-[#a96631] mb-8">----- Our Products -----</h2>
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://www.thebostoncalendar.com/system/events/photos/000/371/537/large/_msv9886_Momo_3.jpg?1645819118" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <img src="image1.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
                         <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
@@ -93,7 +117,7 @@
                 </div>
     
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="/image/image1.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <img src="image2.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
                         <p>Strong, bold espresso shot for that instant energy boost.</p>
@@ -101,142 +125,164 @@
                 </div>
     
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <img src="image3.jpeg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
                         <p>Chilled, refreshing iced coffee with a smooth taste.</p>
                     </div>
                 </div>
+    
                 <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
+                    <img src="image4.png" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
                     <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
+                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
                     </div>
-                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
-                    </div>
-                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
-                    </div>
-                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
-                    </div>
-                </div>
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
-                    </div>
-                </div><div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="https://i.pinimg.com/736x/f1/4e/70/f14e7007806beed9f34ff9cf733e5e52.jpg" alt="Coffee Product" class="rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
-                    </div>
-                </div>
+                </div>         
             </div>
         </div>
     </section>
-    <footer id="contact" class="relative bg-[#2c1412]">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-12">
-                <div class="col-span-12">
-                    <div class="py-[60px] px-0">
-                        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
-                            <div class="lg:col-span-4 md:col-span-12">
-                                <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/TFG-SPACES-logo.png" class="h-10">                                <p class="mt-5 text-gray-300 text-left text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui nobis aliquid hic sed neque. Vel, odio. Sint, minus ducimus. Quod!</p>
-                                <ul class="list-none mt-6 text-center lg:text-justify">
-                                    <li class="inline">
-                                        <a href="" class="font-semibold tracking-wide align-middle transition-duration-500 ease-in-out p-1 h-9 w-9 inline-flex items-center text-center justify-center text-sm border-2 border-transparent rounded-md hover:border-yellow-600"> 
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="inline">
-                                        <a href="" class="font-semibold tracking-wide align-middle transition-duration-500 ease-in-out p-1 h-9 w-9 inline-flex items-center text-center justify-center text-sm border-2 border-transparent rounded-md hover:border-yellow-600"> 
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="inline">
-                                        <a href="" class="font-semibold tracking-wide align-middle transition-duration-500 ease-in-out p-1 h-9 w-9 inline-flex items-center text-center justify-center text-sm border-2 border-transparent rounded-md hover:border-yellow-600"> 
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="inline">
-                                        <a href="" class="font-semibold tracking-wide align-middle transition-duration-500 ease-in-out p-1 h-9 w-9 inline-flex items-center text-center justify-center text-sm border-2 border-transparent rounded-md hover:border-yellow-600"> 
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+    
+    <!-- ari ang tiil -->
+    <footer class="bg-[#2C1412] text-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <div class="flex flex-col space-y-4">
+                        <div class="text-2xl font-bold inline-block w-50 py-1">
+                            <img src="logo3.png" alt="">                        </div>
+                        <p class="text-sm text-gray-300">
+                            Connect with us for collaborative opportunities, inquiries, 
+                            or to learn more about our services. Let’s bring your vision to life.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-3">Useful Links</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Event Space</a></li>
+                        <li><a href="#" class="hover:text-white">Meeting Rooms</a></li>
+                        <li><a href="#" class="hover:text-white">Private Office Space</a></li>
+                        <li><a href="#" class="hover:text-white">Co-Working Space</a></li>
+                        <li><a href="#" class="hover:text-white">Our Gallery</a></li>
+                    </ul>
+                </div>
+                <!-- ari ang contact us -->
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li class="flex items-start hover:text-[#a96631] hover:cursor-pointer">
+                            <span class="mr-2">📍</span> 
+                            8th Floor & 1103-1104, Park Centrale Building, IT Park, Apas, Cebu City, Philippines-6000
+                        </li>
+                        <li class="flex items-center hover:text-[#a96631] hover:cursor-pointer">
+                            <span class="mr-2">📞</span> +63 920 925 0916
+                        </li>
+                        <li class="flex items-center hover:text-[#a96631] hover:cursor-pointer">
+                            <span class="mr-2">📧</span> sales@teleforcespaces.com
+                        </li>
+                    </ul>
+                </div>
 
-                            <div class="lg:col-span-2 md:col-span-4 text-center lg:text-justify">
-                                <h5 class="tracking-[1px] text-yellow-300 font-semibold">Company</h5>
-                                <ul class="list-none mt-6">
-                                    <li><a href="#" class="text-gray-300 hover:text-gray-400 transition-all duration-500 ease-in-out">About Us</a></li>
-                                    <li class="mt-[10px]"><a href="#" class="text-white hover:text-gray-400 transition-all duration-500 ease-in-out">Services</a></li>
-                                    <li class="mt-[10px]"><a href="#" class="text-white hover:text-gray-400 transition-all duration-500 ease-in-out">Pricing</a></li>
-                                    <li class="mt-[10px]"><a href="#" class="text-white hover:text-gray-400 transition-all duration-500 ease-in-out">Blog</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="lg:col-span-2 md:col-span-4 text-center lg:text-justify">
-                                <h5 class="tracking-[1px] text-yellow-300 font-semibold">TFG Spaces</h5>
-                                <ul class="list-none mt-6">
-                                    <li><a href="#" class="text-gray-300 hover:text-gray-400 transition-all duration-500 ease-in-out">About Us</a></li>
-                                    <li class="mt-[10px]"><a href="#" class="text-white hover:text-gray-400 transition-all duration-500 ease-in-out">Services</a></li>
-                                    <li class="mt-[10px]"><a href="#" class="text-white hover:text-gray-400 transition-all duration-500 ease-in-out">Pricing</a></li>
-                                    <li class="mt-[10px]"><a href="#" class="text-white hover:text-gray-400 transition-all duration-500 ease-in-out">Blog</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="lg:col-span-3 md:col-span-4 text-center lg:text-justify">
-                                <h5 class="tracking-[1px] text-yellow-300 font-semibold">TFG Spaces/NewsLetter</h5>
-                                <p class="mt-6 text-gray-300">Sign Up and Receive the latest updates</p>
-                                <form>
-                                    <div class="grid grid-cols-1">
-                                        <div class="my-3">
-                                            <label for="" class="font-label text-white">
-                                                Write your email:
-                                                <span class="text-red-600">*</span>
-                                            </label>
-                                        </div>
-                                        <div class="relative mt-2">
-                                            <input type="email" class="w-full py-2 px-3 rounded h-10 outline-none bg-transparent border border-white text-white focus:border-[#a96631]">
-                                        </div>
-                                        <button type="submit" class="w-auto py-2 px-5 inline-block font-semibold tracking-wide border align-middle text-center bg-yellow-400 border-[#201914] text-black rounded-lg hover:bg-sky-400 mt-2">Subscribe</button>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
+                <!-- Subscribe -->
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-3">Subscribe Now</h3>
+                    <div class="flex items-center border-b border-gray-400 pb-2">
+                        <input type="email" placeholder="Your mail here" class="bg-transparent outline-none w-full text-sm text-gray-300 placeholder-gray-400">
+                        <button class="text-white hover:text-yellow-400">➜</button>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-white hover:text-gray-400 text-2xl">📘</a>
+                        <a href="#" class="text-white hover:text-gray-400 text-2xl">🔗</a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>   
-    <button id="go-top" class="fixed bottom-10 right-10 p-4 bg-[#a96631] text-white rounded-2xl shadow-lg hidden hover:bg-[#a96631] transition-all duration-300">
+    </footer>  
+    <button id="go-top" class="fixed bottom-20 right-4 p-4 bg-[#a96631] text-white rounded-2xl shadow-lg hidden hover:bg-[#a96631] transition-all duration-300">
         <i class="bx bx-arrow-to-top text-2xl"></i>
     </button>
-    <script src="/js/main.js"></script>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "6690bfb1-6f4b-49aa-b4d1-134e107de62b",
+            apiHost: "https://ponsica-ponsica.hf.space",
+            chatflowConfig: {},
+            observersConfig: {},
+            theme: {
+                button: {
+                    backgroundColor: '#a96631',
+                    right: 20,
+                    bottom: 20,
+                    size: 50,
+                    dragAndDrop: true,
+                    iconColor: 'white',
+                    customIconSrc: 'logo2.png',
+                    autoWindowOpen: {
+                        autoOpen: false, 
+                        autoOpenOnMobile: false
+                    }
+                },
+                customCSS: ``,
+                chatWindow: {
+                    showTitle: true,
+                    showAgentMessages: true,
+                    title: 'Chat Bot',
+                    titleAvatarSrc: 'logo.png',
+                    welcomeMessage: 'Hello! This is a custom welcome message',
+                    errorMessage: 'This is a custom error message',
+                    backgroundColor: '#ffffff',
+                    backgroundImage: 'enter image path or link',
+                    fontSize: 16,
+                    starterPrompts: [
+                        "What is a bot?",
+                        "Who are you?"
+                    ],
+                    starterPromptFontSize: 15,
+                    clearChatOnReload: false,
+                    sourceDocsTitle: 'Sources:',
+                    renderHTML: true,
+                    botMessage: {
+                        backgroundColor: '#f7f8ff',
+                        textColor: '#303235',
+                        showAvatar: true,
+                        avatarSrc: 'logo2.png'
+                    },
+                    userMessage: {
+                        backgroundColor: '#a96631',
+                        textColor: '#ffffff',
+                        showAvatar: true,
+                        avatarSrc: 'https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png'
+                    },
+                    textInput: {
+                        placeholder: 'Type your question',
+                        backgroundColor: '#ffffff',
+                        textColor: '#303235',
+                        sendButtonColor: '#a96631',
+                        maxChars: 50,
+                        maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                        autoFocus: true
+                    },
+                    feedback: {
+                        color: '#303235'
+                    },
+                    dateTimeToggle: {
+                        date: true,
+                        time: true
+                    },
+                    footer: {
+                        textColor: '#303235',
+                        text: 'Powered by',
+                        company: 'Teleforce',
+                        companyLink: 'https://teleforcespaces.com/'
+                    }
+                }
+            }
+        })
+    </script>
+    
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000 });
