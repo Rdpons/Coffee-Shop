@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himalayan Dumplings</title>
+    <title>TFG</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
         rel="stylesheet">
-    <link rel="icon" href="/image/logo2.png" type="image/icon type" class="w-30">
+    <link rel="icon" href="logo2.png" type="image/icon type" class="w-30">
 </head>
 <body class="bg-[#fff] text-white">
-    <header class="w-full bg-[#2C1412] bg-opacity-90 z-50 fixed top-0 left-0 right-0 shadow-md">
+    <header class="w-full bg-transparent z-50 fixed top-0 left-0 right-0">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="/image/logo3.png" class="h-10 w-auto">
+            <img src="logo3.png" class="h-10 w-auto">
             <div class="lg:hidden flex items-center">
                 <button id="burger-icon" class="text-white">
                     <i class="bx bx-menu text-2xl"></i>
@@ -29,6 +29,7 @@
             </nav>
         </div>
     </header>
+    
     <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 w-64 h-full bg-[#2C1412] bg-opacity-80 flex flex-col items-center justify-center z-50 space-y-4 text-white text-xl">
         <a href="#home" class="hover:text-yellow-400">Home</a>
         <a href="#about" class="hover:text-yellow-400">About</a>
@@ -36,16 +37,18 @@
         <a href="#contact" class="hover:text-yellow-400">Contact</a>
         <button id="close-menu"></button>
     </div>
-    <!-- ari ang home -->
-    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center px-6 text-center" 
-        style="background-image: url('https://i.pinimg.com/736x/a3/69/df/a369dfe059e9f517b75305b1e99378e3.jpg');">
-        <div class="absolute inset-0 bg-[#2C1412] bg-opacity-20"></div>
+    
+    <!-- Home Section -->
+    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center px-6 text-center transition-all duration-1000 ease-in-out" 
+        style="background-image: url('bg.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <div class="relative z-10" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-5xl font-bold">The Best Coffee in Town</h2>
+            <h2 class="text-3xl sm:text-5xl font-bold text-white">The Best Coffee in Town</h2>
             <p class="text-lg sm:text-xl mt-4 text-gray-200 mb-10">Freshly brewed, perfectly served.</p>
-            <a href="#footer" class="bg-[#a96631] p-2 rounded-lg text-xl hover:brightness-90 font-semibold">Contact Us</a>
+            <a id="contact-us" href="#footer" class="bg-[#a96631] p-2 rounded-lg text-xl hover:bg-[#8e4d1e] font-semibold transition duration-300 ease-in-out">Contact Us</a>
         </div>
     </section>
+    
     <!-- ari ang about -->
     <section id="about" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
@@ -100,49 +103,112 @@
             </iframe>       
         </div>
     </section>
-    
-
-    <!-- ari ang product -->
+    <!-- ari ang about -->
     <section id="product" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-[#a96631] mb-8">----- Our Products -----</h2>
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="/image/image1.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image1.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                         <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
                     </div>
                 </div>
-    
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="/image/image2.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image5.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
+                    </div>
+                </div>  
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image7.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image6.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
+                    </div>
+                </div>  
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image2.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                         <p>Strong, bold espresso shot for that instant energy boost.</p>
                     </div>
                 </div>
-    
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="/image/image3.jpeg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image3.jpeg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                         <p>Chilled, refreshing iced coffee with a smooth taste.</p>
                     </div>
                 </div>
     
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer">
-                    <img src="/image/image4.png" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image4.png" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
                     <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] opacity-0 text-white flex justify-center items-center text-lg font-semibold p-4 transition-opacity duration-500 group-hover:opacity-100">
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                         <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
                     </div>
                 </div>         
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image8.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image9.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image10.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image12.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
+                    <img src="image13.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
+                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
+                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </section>
-    
     <!-- ari ang tiil -->
     <footer class="bg-[#2C1412] text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
@@ -150,7 +216,7 @@
                 <div class="col-span-1">
                     <div class="flex flex-col space-y-4">
                         <div class="text-2xl font-bold inline-block w-50 py-1">
-                            <img src="/image/logo3.png" alt="">                        </div>
+                            <img src="logo3.png" alt="">                        </div>
                         <p class="text-sm text-gray-300">
                             Connect with us for collaborative opportunities, inquiries, 
                             or to learn more about our services. Let’s bring your vision to life.
@@ -174,7 +240,7 @@
                     <ul class="text-gray-300 text-sm space-y-2">
                         <li class="flex items-start hover:text-[#a96631] hover:cursor-pointer">
                             <span class="mr-2">📍</span> 
-                            8th Floor & 1103-1104, Park Centrale Building, IT Park, Apas, Cebu City, Philippines-6000
+                            108 Gov. M. Cuenco Ave, Cebu City, 6000 Cebu
                         </li>
                         <li class="flex items-center hover:text-[#a96631] hover:cursor-pointer">
                             <span class="mr-2">📞</span> +63 920 925 0916
@@ -185,7 +251,7 @@
                     </ul>
                 </div>
 
-                <!-- Subscribe -->
+                <!-- ari ang subscribe -->
                 <div class="col-span-1">
                     <h3 class="text-lg font-semibold mb-3">Subscribe Now</h3>
                     <div class="flex items-center border-b border-gray-400 pb-2">
@@ -196,10 +262,22 @@
                         <a href="#" class="text-white hover:text-gray-400 text-2xl">📘</a>
                         <a href="#" class="text-white hover:text-gray-400 text-2xl">🔗</a>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </footer>  
+    <div class="bg-[#2C1412] text-gray-300 pt-5 pb-0 border-t border-t-gray-400">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <p class="text-sm">
+                &copy; All Rights Reserved 2025 - Teleforce Spaces
+            </p>
+            <p class="text-sm">
+                <a href="#" class="hover:text-gray-400">Terms & Conditions</a> | 
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
     <button id="go-top" class="fixed bottom-20 right-4 p-4 bg-[#a96631] text-white rounded-2xl shadow-lg hidden hover:bg-[#a96631] transition-all duration-300">
         <i class="bx bx-arrow-to-top text-2xl"></i>
     </button>
@@ -218,7 +296,7 @@
                     size: 50,
                     dragAndDrop: true,
                     iconColor: 'white',
-                    customIconSrc: '/image/logo2.png',
+                    customIconSrc: 'logo2.png',
                     autoWindowOpen: {
                         autoOpen: false, 
                         autoOpenOnMobile: false
@@ -229,7 +307,7 @@
                     showTitle: true,
                     showAgentMessages: true,
                     title: 'Chat Bot',
-                    titleAvatarSrc: '/image/logo.png',
+                    titleAvatarSrc: 'logo.png',
                     welcomeMessage: 'Hello! This is a custom welcome message',
                     errorMessage: 'This is a custom error message',
                     backgroundColor: '#ffffff',
@@ -247,7 +325,7 @@
                         backgroundColor: '#f7f8ff',
                         textColor: '#303235',
                         showAvatar: true,
-                        avatarSrc: '/image/logo2.png'
+                        avatarSrc: 'logo2.png'
                     },
                     userMessage: {
                         backgroundColor: '#a96631',
@@ -282,7 +360,7 @@
         })
     </script>
     
-    <script src="/js/main.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000 });
