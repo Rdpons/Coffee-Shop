@@ -34,9 +34,9 @@ document.addEventListener('click', (e) => {
     }
 });
 const backgrounds = [
-    {image: 'url("bg.jpg")',},
+    {image: 'url("/image/bg.jpg")',},
     {image: 'url("https://i.pinimg.com/736x/a3/69/df/a369dfe059e9f517b75305b1e99378e3.jpg")',},
-    {image: 'url("image2.jpg")',},
+    {image: 'url("/image/image2.jpg")',},
 ];
 
 let currentIndex = 0;
