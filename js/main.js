@@ -95,11 +95,11 @@ const header = document.getElementById("main-header");
         document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
     });
     const products = [
-        { id: 1, name: "Product 1", price: "TBA", image: "image1.jpg" },
-        { id: 2, name: "Product 2", price: "TBA", image: "image2.jpg" },
-        { id: 3, name: "Product 3", price: "TBA", image: "image3.jpeg" },
-        { id: 4, name: "Product 4", price: "TBA", image: "image4.png" },
-        { id: 5, name: "Product 5", price: "TBA", image: "image5.jpg" },
+        { id: 1, name: "Product 1", price: "TBA", image: "/image/image1.jpg" },
+        { id: 2, name: "Product 2", price: "TBA", image: "/image/image2.jpg" },
+        { id: 3, name: "Product 3", price: "TBA", image: "/image/image3.jpeg" },
+        { id: 4, name: "Product 4", price: "TBA", image: "/image/image4.png" },
+        { id: 5, name: "Product 5", price: "TBA", image: "/image/image5.jpg" },
     ];
 
     function generateProductCards() {
@@ -123,7 +123,6 @@ const header = document.getElementById("main-header");
                             </svg>
                         </div>
                     </div>
-                    <!-- Price container, initially hidden -->
                     <div id="price-container-${product.id}" class="price-container opacity-0 transition-all">
                         <span id="price-${product.id}" class="text-lg font-bold text-[#a96631]">TBA</span>
                     </div>
