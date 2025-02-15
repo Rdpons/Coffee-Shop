@@ -94,66 +94,6 @@ const header = document.getElementById("main-header");
         event.preventDefault();
         document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
     });
-    const products = [
-        { id: 1, name: "Product 1", price: "TBA", image: "/image/image1.jpg" },
-        { id: 2, name: "Product 2", price: "TBA", image: "/image/image2.jpg" },
-        { id: 3, name: "Product 3", price: "TBA", image: "/image/image3.jpeg" },
-        { id: 4, name: "Product 4", price: "TBA", image: "/image/image4.png" },
-        { id: 5, name: "Product 5", price: "TBA", image: "/image/image5.jpg" },
-    ];
-
-    function generateProductCards() {
-        const productList = document.getElementById('product-list');
-        
-        products.forEach(product => {
-            const productCard = document.createElement('div');
-            productCard.classList.add('bg-[#f8f8f8]', 'p-6', 'rounded-3xl', 'shadow-lg', 'relative', 'overflow-hidden', 'transition-all');
-            productCard.setAttribute('id', `product-card-${product.id}`);
-
-            const productHTML = `
-                <img src="${product.image}" alt="${product.name}" class="h-48 w-full rounded-lg object-cover" id="product-image-${product.id}">
-                <div class="p-4">
-                    <div class="flex items-start justify-between mb-4">
-                        <div>
-                            <h3 class="font-bold text-lg text-[#2C1412]" id="product-name-${product.id}">${product.name}</h3>
-                        </div>
-                        <div class="bg-gray-200 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-300 transition duration-300 cursor-pointer preview-btn" data-product-id="${product.id}">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-gray-600">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16l-4-4h8l-4 4z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div id="price-container-${product.id}" class="price-container opacity-0 transition-all">
-                        <span id="price-${product.id}" class="text-lg font-bold text-[#a96631]">TBA</span>
-                    </div>
-                </div>
-            `;
-            
-            productCard.innerHTML = productHTML;
-            productList.appendChild(productCard);
-        });
-    }
-
-    generateProductCards();
-
-    document.addEventListener('click', function (event) {
-        if (event.target && event.target.classList.contains('preview-btn')) {
-            const productId = event.target.getAttribute('data-product-id');
-            const priceContainer = document.getElementById(`price-container-${productId}`);
-            const priceElement = document.getElementById(`price-${productId}`);
-
-            if (priceContainer.classList.contains('opacity-0')) {
-                priceContainer.classList.remove('opacity-0');
-                priceContainer.classList.add('opacity-100');
-                priceElement.textContent = products.find(p => p.id == productId).price;
-            } else {
-                priceContainer.classList.remove('opacity-100');
-                priceContainer.classList.add('opacity-0');
-                priceElement.textContent = "TBA";
-            }
-        }
-    });
-
 
 
 
