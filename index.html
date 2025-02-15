@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himalayan Dumplings</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
         rel="stylesheet">
-    <link rel="icon" href="/image/logo2.png" type="image/icon type" class="w-30">
+    <link rel="icon" href="logo2.png" type="image/icon type" class="w-30">
 </head>
 <body class="bg-[#fff] text-white">
-    <header class="w-full bg-transparent z-50 fixed top-0 left-0 right-0">
+    <header id="main-header" class="w-full bg-transparent z-50 fixed top-0 left-0 right-0 transition-transform duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="/image/logo3.png" class="h-10 w-auto">
+            <img src="logo4.png" class="h-10 w-auto">
             <div class="lg:hidden flex items-center">
                 <button id="burger-icon" class="text-white">
                     <i class="bx bx-menu text-2xl"></i>
                 </button>
             </div>
             <nav id="menu" class="hidden lg:flex space-x-10 text-white font-medium">
-                <a href="#home" class="hover:text-yellow-400 transition">Home</a>
-                <a href="#about" class="hover:text-yellow-400 transition">About</a>
-                <a href="#product" class="hover:text-yellow-400 transition">Product</a>
-                <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+                <a href="#home" id="home-link" class="hover:text-yellow-400 transition">Home</a>
+                <a href="#about" id="about-link" class="hover:text-yellow-400 transition">About</a>
+                <a href="#product" id="product-link" class="hover:text-yellow-400 transition">Product</a>
+                <a href="#contact" id="contact-link" class="hover:text-yellow-400 transition">Contact</a>
             </nav>
         </div>
     </header>
-    
     <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 w-64 h-full bg-[#2C1412] bg-opacity-80 flex flex-col items-center justify-center z-50 space-y-4 text-white text-xl">
         <a href="#home" class="hover:text-yellow-400">Home</a>
         <a href="#about" class="hover:text-yellow-400">About</a>
@@ -38,38 +36,45 @@
         <button id="close-menu"></button>
     </div>
     
-    <!-- Home Section -->
+    <!-- ari ang home -->
     <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center px-6 text-center transition-all duration-1000 ease-in-out" 
-        style="background-image: url('/image/bg.jpg');">
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="relative z-10" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-5xl font-bold text-white">The Best Coffee in Town</h2>
-            <p class="text-lg sm:text-xl mt-4 text-gray-200 mb-10">Freshly brewed, perfectly served.</p>
-            <a id="contact-us" href="#footer" class="bg-[#a96631] p-2 rounded-lg text-xl hover:bg-[#8e4d1e] font-semibold transition duration-300 ease-in-out">Contact Us</a>
+        style="background-image: url('bg.jpg');">
+        <div class="absolute inset-0 backdrop-blur-md bg-black bg-opacity-30"></div>
+        <div class="relative z-10 space-y-6" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-5xl font-bold text-white drop-shadow-lg">The Best Coffee in Town</h2>
+            <p class="text-lg sm:text-xl text-gray-200 drop-shadow-md">Freshly brewed, perfectly served.</p>
+            <a id="learn-more" href="#about" class="learn-more-btn">
+                Learn More
+            </a>
         </div>
     </section>
-    
+
     <!-- ari ang about -->
     <section id="about" class="py-16 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
             <h2 class="text-3xl font-bold text-[#a96631]">About Us</h2>
             <p class="mt-4 text-black max-w-3xl mx-auto">At TFG, we are passionate about crafting the perfect cup of coffee...</p>
+
             <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-8">
                 <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/ParkCentraleJoseMariadelMarSt.cor_.AbadStreetCebuCentralVisayas6000.jpg" 
-                     alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
+                    alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
                 <div class="max-w-md text-black" data-aos="fade-left">
-                    <h3 class="text-xl font-semibold text-[#a96631]">Our Story</h3>
-                    <p class="mt-2">Founded in 2024, Ardii Coffee started as a small café with a big dream...</p>
+                    <p class="mt-2 text-left text-lg">Where we bring the rich flavors of Tibetan Momos (Dumplings) to the heart of the Philippines. Our handcrafted dumplings are made with love, tradition, and the perfect blend of spices—delivering an authentic taste that takes you on a journey to the Himalayan.
+                        Every bite of our handcrafted momos tells a story of warmth, heritage, and culinary excellence.</p>
                 </div>
             </div>
+            <div class="hidden sm:flex flex-col items-center my-6 space-y-2" data-aos="fade-up">
+                <div class="w-1 h-20 bg-[#a96631]"></div>
+            </div>
+            <div class="flex sm:hidden w-[2px] h-20 bg-[#a96631] mx-auto my-6" data-aos="fade-left"></div>
             <div class="mt-8 flex flex-col md:flex-row-reverse justify-center items-center gap-8">
                 <img src="https://teleforcespaces.com/wp-content/uploads/2024/07/cafeteria.png" 
-                     alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
-                <div class="max-w-md text-black" data-aos="fade-left">
-                    <h3 class="text-xl font-semibold text-[#a96631]">Our Story</h3>
-                    <p class="mt-2">Founded in 2024, Ardii Coffee started as a small café with a big dream...</p>
+                    alt="About Us Image" class="w-full max-w-md rounded-lg shadow-lg object-cover" data-aos="fade-right">
+                <div class="max-w-md text-black text-left text-lg" data-aos="fade-left">
+                    <p class="mt-2">Whether you're a longtime momo lover or trying them for the first time, we invite you to savor the comforting goodness of this beloved Himalayan delicacy.
+                        As we prepare to open our doors soon, we can’t wait to share this experience with you.</p>
                 </div>
-            </div>
+            </div>  
             <div class="mt-16 flex justify-center gap-8 mb-20">
                 <div class="w-24 h-24 rounded-full overflow-hidden">
                     <img src="https://i.pinimg.com/736x/e5/c0/32/e5c032826139b72c2af2671ea788d811.jpg" alt="CEO 1" class="w-full h-full object-cover">
@@ -83,132 +88,57 @@
             </div>
         </div>
     </section>
-    <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-right">
-        <div>
-            <h2 class="text-4xl font-bold mb-6 text-black">Our Locations</h2>      
-            <div class="mb-4">
-                <h3 class="text-2xl font-semibold">Cebu</h3>
-                <p class="text-gray-700">
-                    108 Gov. M. Cuenco Ave, Cebu City, 6000 Cebu
-                </p>
-            </div>
-        </div>
-        <div>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.2255594255473!2d123.91283222850426!3d10.349701718642864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a998eb8b21c239%3A0x33fc570cc37a1a71!2s108%20Gov.%20M.%20Cuenco%20Ave%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1739253394895!5m2!1sen!2sph" 
-                class="w-full h-[300px] md:h-[450px] border-0 rounded-2xl" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>       
-        </div>
-    </section>
-    <!-- ari ang about -->
-    <section id="product" class="py-16 bg-white text-center">
-        <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-3xl font-bold text-[#a96631] mb-8">----- Our Products -----</h2>
-            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image1.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
-                    </div>
-                </div>
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image5.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
-                    </div>
-                </div>  
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image7.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
-                    </div>
-                </div>
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image6.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Premium Coffee Blend</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Rich, aromatic, and perfectly balanced coffee blend.</p>
-                    </div>
-                </div>  
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image2.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Espresso Shot</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Strong, bold espresso shot for that instant energy boost.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image3.jpeg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Iced Coffee</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Chilled, refreshing iced coffee with a smooth taste.</p>
-                    </div>
+    <section class="relative max-w-7xl mx-auto px-6 py-16" data-aos="fade-right">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://source.unsplash.com/1600x900/?city,street');"></div>
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 text-[#a96631] flex items-center gap-2">
+                    <svg class="w-8 h-8 text-[#a96631] animate-carousel" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s6-6.7 6-11a6 6 0 10-12 0c0 4.3 6 11 6 11z"/>
+                    </svg>
+                    Our Location
+                </h2>  
+                <div class="mb-6">
+                    <h3 class="text-m font-semibold text-gray-800">📍 108 Gov. M. Cuenco Ave, Cebu City, 6000</h3>
+                    <p class="mt-2 text-gray-600"><strong>🕒 Hours:</strong> 8:00 AM - 9:00 PM</p>
+                    <p class="mt-2 text-gray-600"><strong>📞 Contact:</strong> (032) 123-4567</p>
                 </div>
     
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image4.png" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
+                <a href="https://www.google.com/maps/place/108+Gov.+M.+Cuenco+Ave,+Cebu+City,+6000+Cebu/@10.3497004,123.9128322,19z/data=!3m1!4b1!4m6!3m5!1s0x33a998eb8b21c239:0x33fc570cc37a1a71!8m2!3d10.3497004!4d123.9134773!16s%2Fg%2F11q2n9hgmw?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">
+                    <div class="mt-4 flex justify-center md:justify-start">
+                        <button class="px-6 py-3 bg-[#a96631] text-white font-semibold rounded-lg shadow-md hover:bg-[#8c5525] transition duration-300">
+                            View on Google Maps
+                        </button>
                     </div>
-                </div>         
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image8.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
-                    </div>
-                </div>
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image9.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
-                    </div>
-                </div>
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image10.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
-                    </div>
-                </div>
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image12.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
-                    </div>
-                </div>
-
-                <div class="bg-[#f8f8f8] p-6 rounded-lg shadow-lg relative group transform hover:scale-105 transition-all duration-500 hover:cursor-pointer overflow-hidden">
-                    <img src="/image/image13.jpg" alt="Coffee Product" class="h-48 w-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-110">
-                    <h3 class="mt-4 text-xl font-semibold text-[#2C1412]">Classic Latte</h3>
-                    <div class="absolute bottom-0 left-0 right-0 bg-[#2C1412] text-white flex justify-center items-center text-lg font-semibold p-8 opacity-0 translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                        <p>Smooth, creamy latte with a perfect balance of coffee and milk.</p>
-                    </div>
-                </div>
-
+                </a>
                 
+            </div>
+            <div class="relative">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.2255594255473!2d123.91283222850426!3d10.349701718642864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a998eb8b21c239%3A0x33fc570cc37a1a71!2s108%20Gov.%20M.%20Cuenco%20Ave%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1739253394895!5m2!1sen!2sph" 
+                    class="w-full h-[300px] md:h-[450px] border-0 rounded-2xl shadow-lg" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>    
             </div>
         </div>
     </section>
+    
+    <!-- ari ang product -->
+    <section id="product" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-[#a96631] mb-8 flex items-center justify-center">
+                <span class="text-3xl font-bold text-[#a96631]">—</span>
+                <span class="mx-2">Our Products</span>
+                <span class="text-3xl font-bold text-[#a96631]">—</span>
+            </h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="product-list">
+            </div>
+        </div>
+    </section>
+    
+     
     <!-- ari ang tiil -->
     <footer class="bg-[#2C1412] text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
@@ -216,7 +146,8 @@
                 <div class="col-span-1">
                     <div class="flex flex-col space-y-4">
                         <div class="text-2xl font-bold inline-block w-50 py-1">
-                            <img src="/image/logo3.png" alt="">                        </div>
+                            <img src="logo3.png" alt="">                       
+                         </div>
                         <p class="text-sm text-gray-300">
                             Connect with us for collaborative opportunities, inquiries, 
                             or to learn more about our services. Let’s bring your vision to life.
@@ -259,8 +190,15 @@
                         <button class="text-white hover:text-yellow-400">➜</button>
                     </div>
                     <div class="flex space-x-4 mt-4">
-                        <a href="#" class="text-white hover:text-gray-400 text-2xl">📘</a>
-                        <a href="#" class="text-white hover:text-gray-400 text-2xl">🔗</a>
+                        <a href="https://www.facebook.com/people/Himalayan-Dumplings/61572193812724/" 
+                        class="text-white hover:opacity-80 text-2xl" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" 
+                              alt="Facebook" 
+                              class="w-7 h-7">
+                     </a>
+                     <a href="#" class="text-white hover:text-gray-400 text-2xl">🔗</a>
                     </div>
                     
                 </div>
@@ -268,99 +206,29 @@
         </div>
     </footer>  
     <div class="bg-[#2C1412] text-gray-300 pt-5 pb-0 border-t border-t-gray-400">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <p class="text-sm">
-                &copy; All Rights Reserved 2025 - Teleforce Spaces
+                &copy; 2025 Teleforce Spaces. All rights reserved.
             </p>
-            <p class="text-sm">
+            <p class="text-sm mt-2 md:mt-0">
                 <a href="#" class="hover:text-gray-400">Terms & Conditions</a> | 
                 <a href="#" class="hover:text-gray-400">Privacy Policy</a>
             </p>
         </div>
     </div>
-    <button id="go-top" class="fixed bottom-20 right-4 p-4 bg-[#a96631] text-white rounded-2xl shadow-lg hidden hover:bg-[#a96631] transition-all duration-300">
-        <i class="bx bx-arrow-to-top text-2xl"></i>
-    </button>
-    <script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-        Chatbot.init({
-            chatflowid: "6690bfb1-6f4b-49aa-b4d1-134e107de62b",
-            apiHost: "https://ponsica-ponsica.hf.space",
-            chatflowConfig: {},
-            observersConfig: {},
-            theme: {
-                button: {
-                    backgroundColor: '#a96631',
-                    right: 20,
-                    bottom: 20,
-                    size: 50,
-                    dragAndDrop: true,
-                    iconColor: 'white',
-                    customIconSrc: '/image/logo2.png',
-                    autoWindowOpen: {
-                        autoOpen: false, 
-                        autoOpenOnMobile: false
-                    }
-                },
-                customCSS: ``,
-                chatWindow: {
-                    showTitle: true,
-                    showAgentMessages: true,
-                    title: 'Chat Bot',
-                    titleAvatarSrc: '/image/logo.png',
-                    welcomeMessage: 'Hello! This is a custom welcome message',
-                    errorMessage: 'This is a custom error message',
-                    backgroundColor: '#ffffff',
-                    backgroundImage: 'enter image path or link',
-                    fontSize: 16,
-                    starterPrompts: [
-                        "What is a bot?",
-                        "Who are you?"
-                    ],
-                    starterPromptFontSize: 15,
-                    clearChatOnReload: false,
-                    sourceDocsTitle: 'Sources:',
-                    renderHTML: true,
-                    botMessage: {
-                        backgroundColor: '#f7f8ff',
-                        textColor: '#303235',
-                        showAvatar: true,
-                        avatarSrc: '/image/logo2.png'
-                    },
-                    userMessage: {
-                        backgroundColor: '#a96631',
-                        textColor: '#ffffff',
-                        showAvatar: true,
-                        avatarSrc: 'https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png'
-                    },
-                    textInput: {
-                        placeholder: 'Type your question',
-                        backgroundColor: '#ffffff',
-                        textColor: '#303235',
-                        sendButtonColor: '#a96631',
-                        maxChars: 50,
-                        maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
-                        autoFocus: true
-                    },
-                    feedback: {
-                        color: '#303235'
-                    },
-                    dateTimeToggle: {
-                        date: true,
-                        time: true
-                    },
-                    footer: {
-                        textColor: '#303235',
-                        text: 'Powered by',
-                        company: 'Teleforce',
-                        companyLink: 'https://teleforcespaces.com/'
-                    }
-                }
-            }
-        })
-    </script>
     
-    <script src="/js/main.js"></script>
+    <button id="go-top" class="fixed right-6 bottom-10 w-14 h-14 hidden flex items-center justify-center transition-all duration-300">
+        <svg id="progress-circle" width="56" height="56" class="absolute transform rotate-[-90deg]">
+            <circle cx="28" cy="28" r="22" stroke="lightgray" stroke-width="4" fill="none"/>
+            <circle id="progress" cx="28" cy="28" r="22" stroke="#a96631" stroke-width="4" fill="none"
+                stroke-dasharray="138" stroke-dashoffset="138" stroke-linecap="round"/>
+        </svg>
+        <i class="bx bx-chevron-up text-2xl text-[#a96631] absolute"></i>
+    </button>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000 });
