@@ -106,28 +106,29 @@ const header = document.getElementById("main-header");
             });
         });
     });
-    document.querySelectorAll('.filter-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const category = this.getAttribute('data-category');
-                const products = document.querySelectorAll('.product');
-        
-                products.forEach(product => {
-                    if (category === 'all' || product.getAttribute('data-category') === category) {
-                        product.style.opacity = '0';
+   document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            const products = document.querySelectorAll('.product');
+    
+            products.forEach(product => {
+                if (category === 'all' || product.getAttribute('data-category') === category) {
+                    product.style.opacity = '0'; 
+                    setTimeout(() => {
+                        product.style.display = 'block'; 
                         setTimeout(() => {
-                            product.style.display = 'block'; 
-                            product.style.opacity = '1';
-                        }, 200);
-                    } else {
-                        product.style.opacity = '0'; 
-                        setTimeout(() => {
-                            product.style.display = 'none'; 
-                        }, 200);
-                    }
-                });
+                            product.style.opacity = '1'; 
+                        }, 100); 
+                    }, 500); 
+                } else {
+                    product.style.opacity = '0';
+                    setTimeout(() => {
+                        product.style.display = 'none';
+                    }, 500);
+                }
             });
         });
-
+    });
 
 
 
