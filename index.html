@@ -133,54 +133,72 @@
                 <span class="mx-2">Our Products</span>
                 <span class="text-3xl font-bold border-2 border-[#a96631] w-10 text-[#a96631]"></span>
             </h2>
+            
+            <!-- Category Buttons -->
+            <div class="mb-8 flex justify-center space-x-4">
+                <button class="filter-btn bg-[#a96631] text-white px-4 py-2 rounded-lg" data-category="all">All</button>
+                <button class="filter-btn bg-[#a96631] text-white px-4 py-2 rounded-lg" data-category="coffee">Coffee</button>
+                <button class="filter-btn bg-[#a96631] text-white px-4 py-2 rounded-lg" data-category="dumplings">Dumplings</button>
+            </div>
+    
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
+                <!-- Coffee Products -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg product" data-category="coffee">
+                    <img src="https://i.pinimg.com/736x/83/28/b6/8328b6f35d523c0dced5872e3ed2624b.jpg" alt="Espresso" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-[#a96631] text-white px-4 py-2 rounded-full font-bold shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
+                            TBA
+                        </span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="text-xl font-bold">Espresso</h3>
+                        <p class="text-sm">Rich and bold espresso shot</p>
+                    </div>
+                </div>
+    
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg product" data-category="coffee">
+                    <img src="https://i.pinimg.com/736x/18/2e/0e/182e0e8e9a48d7aa756ff0a537f2bfd7.jpg" alt="Cappuccino" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-[#a96631] text-white px-4 py-2 rounded-full font-bold shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
+                            TBA
+                        </span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="text-xl font-bold">Cappuccino</h3>
+                        <p class="text-sm">Creamy frothy delight</p>
+                    </div>
+                </div>
+    
+                <!-- Dumpling Products -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg product" data-category="dumplings">
                     <img src="/image/image1.jpg" alt="Chicken Momo" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110">
                     <div class="absolute top-4 right-4">
                         <span class="bg-[#a96631] text-white px-4 py-2 rounded-full font-bold shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
                             TBA
                         </span>
                     </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold text-left">Chicken Momo</h3>
-                            <p class="text-sm text-center">Tender minced chicken with Himalayan spices</p>
-                        </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="text-xl font-bold">Chicken Momo</h3>
+                        <p class="text-sm">Tender minced chicken with Himalayan spices</p>
+                        
                     </div>
                 </div>
     
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg product" data-category="dumplings">
                     <img src="/image/image2.jpg" alt="Vegetable Momo" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110">
                     <div class="absolute top-4 right-4">
                         <span class="bg-[#a96631] text-white px-4 py-2 rounded-full font-bold shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
                             TBA
                         </span>
                     </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold text-left">Vegetable Momo</h3>
-                            <p class="text-sm">Fresh vegetables with aromatic herbs</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                    <img src="/image/image3.jpeg" alt="Cheese Momo" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110">
-                    <div class="absolute top-4 right-4">
-                        <span class="bg-[#a96631] text-white px-4 py-2 rounded-full font-bold shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
-                            TBA
-                        </span>
-                    </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold text-left">Cheese Momo</h3>
-                            <p class="text-sm">Blend of cheese and special spices</p>
-                        </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="text-xl font-bold">Vegetable Momo</h3>
+                        <p class="text-sm">Fresh vegetables with aromatic herbs</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>     
+    </section>   
     <!-- ari ang tiil -->
     <footer class="bg-[#2C1412] text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
